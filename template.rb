@@ -80,7 +80,7 @@ def add_template_repository_to_source_path
     at_exit { FileUtils.remove_entry(tempdir) }
     git clone: [
       "--quiet",
-      "https://github.com/rabid/rails-template.git",
+      "https://github.com/mischa-s/rails-template.git",
       tempdir
     ].map(&:shellescape).join(" ")
 
